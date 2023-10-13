@@ -1,0 +1,91 @@
+/* ---------------------------------------------- */
+.crm-panel
+{
+    width: 100%;
+    display: flex;
+}
+.crm-panel .task-list
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-list .task
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.task .task-top-block
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crm-panel .sub-task-list
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.sub-task-list .sub-task
+{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    padding: 5px;
+}
+
+.sub-task .sub-task-top
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-task .sub-task-bottom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -------------------------------------------------- */
+.task-create
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-create form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-create form .sub-task-block
+{
+    display: flex;
+}
+
+.task-create form .sub-task-block .sub-task-input
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* ----------------------------------------------------- */
