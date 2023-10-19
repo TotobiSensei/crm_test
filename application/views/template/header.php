@@ -11,7 +11,10 @@
         <header>
             <ul>
                 <li><a href="<?=base_url("create-task")?>">Создать проект</a></li>
-                <li><a href="#">Админ панель</a></li>
+                <?php if ($this->moderation->isWorker(2)) :
+                ?>
+                <li><a href="<?=base_url("my-tasks")?>">Мои задачи</a></li>
+                <?php endif; ?>
             </ul>
         </header>
     

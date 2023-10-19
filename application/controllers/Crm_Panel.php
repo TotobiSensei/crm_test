@@ -13,7 +13,7 @@ class Crm_Panel extends CI_Controller
 
     public function show_task_list()
     {
-        $data["task_list"] = $this->rt->get_user_task_list($this->user_id);
+        $data["task_list"] = $this->rt->get_task_list($this->user_id);
 
         $this->load->view("template/header");
         $this->load->view("crm_panel", $data);
@@ -24,8 +24,8 @@ class Crm_Panel extends CI_Controller
     {
         if ($task_id !== null)
         {
-            $data["task_list"] = $this->rt->get_user_task_list($this->user_id);
-            $data["sub_task_list"] = $this->rt->get_user_sub_task_list($this->user_id, $task_id);
+            $data["task_list"] = $this->rt->get_task_list($this->user_id);
+            $data["sub_task_list"] = $this->rt->get_sub_task_list($this->user_id, $task_id);
     
             $this->load->view("template/header");
             $this->load->view("crm_panel", $data);
